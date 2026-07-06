@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blue Green Demo App - Blue</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f52ba, #00b4d8, #caf0f8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .app-card {
+      width: 560px;
+      padding: 40px;
+      border-radius: 24px;
+      background: #ffffff;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+      border-top: 12px solid #007bff;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 9px 20px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      color: #1f2937;
+      font-size: 31px;
+    }
+
+    h2 {
+      margin: 5px 0 15px;
+      color: #2563eb;
+      font-size: 23px;
+    }
+
+    .description {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .login-box {
+      background: linear-gradient(135deg, #eef6ff, #ffffff);
+      padding: 28px;
+      border-radius: 18px;
+      margin-top: 20px;
+      border: 1px solid #dbeafe;
+    }
+
+    .form-row {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 15px;
+      border: 2px solid #bfdbfe;
+      border-radius: 11px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 10px rgba(37, 99, 235, 0.35);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .status {
+      margin-top: 25px;
+      padding: 13px;
+      border-radius: 12px;
+      background: #e7f1ff;
+      color: #0052d4;
+      font-weight: bold;
+      border: 1px solid #bfdbfe;
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: #6b7280;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="app-card">
+
+    <div class="badge">BLUE ENVIRONMENT</div>
+
+    <h1>Blue Green Demo Application</h1>
+    <h2>Version 1 - Production</h2>
+
+    <p class="description">
+      This is the current live application running in the Blue environment.
+    </p>
+
+    <div class="login-box">
+
+      <div class="form-row">
+        <label>Username :</label>
+        <input type="text" placeholder="Enter your username">
+      </div>
+
+      <div class="form-row">
+        <label>Password :</label>
+        <input type="password" placeholder="Enter your password">
+      </div>
+
+      <div class="form-row">
+        <button class="login-btn">Login</button>
+      </div>
+
+    </div>
+
+    <p class="status">
+      Traffic is currently serving from BLUE instance.
+    </p>
+
+    <p class="footer">
+      Classic Blue-Green Deployment Demo
+    </p>
+
+  </div>
+
+</body>
+</html>
